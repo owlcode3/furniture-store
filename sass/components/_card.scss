@@ -1,0 +1,50 @@
+.card {
+  max-width: 27rem;
+  height: 28rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  //background-color: whitesmoke;
+  background-color: rgb(236, 236, 236);
+  transition: all 0.2s;
+
+  box-shadow: var(--shadow-dark);
+  border-radius: 0.5rem;
+  &__icon {
+    // width: 40%;
+    height: 30%;
+    display: block;
+    margin-bottom: 1rem;
+    @include respond(medium) {
+      height: 28%;
+    }
+  }
+
+  &__header {
+    color: black;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+    @include respond(medium) {
+      font-size: 1.8rem;
+    }
+
+    @include respond(mob) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__paragraph {
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0 3.6rem;
+    text-align: center;
+  }
+
+  &:hover {
+    transform: scale(1.1); //translateY(-2rem);
+    box-shadow: var(--shadow-light);
+  }
+}

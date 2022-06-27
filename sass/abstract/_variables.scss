@@ -1,0 +1,36 @@
+:root {
+  --primary-color-1: #3ab0ff;
+  --primary-color-2: #143f6b;
+  --primary-color-3: #06113c;
+  --primary-color-4: #041c32;
+
+  --color-primary: #f0f8ea;
+  --color-primary-light: #ff3366;
+  --color-primary-dark: #b42650;
+
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+
+  --shadow-dark: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+  --shadow-light: 0 2rem 3rem rgba(0, 0, 0, 0.06);
+
+  --line: 1px solid var(--color-grey-light-2);
+}
+
+$color-grey-light-1: #ccf3ee;
+
+// breakpoint
+$bp-largest: 60.625em; // 970px divided by the browser default font size which is 16
+$bp-large: 58.125em; // 930px divided by the browser default font size which is 16
+$bp-medium: 49.625em; // 794px divided by the browser default font size which is 16
+$bp-am: 46.3125em; // 741px divided by the browser default font size which is 16
+$bp-small: 38.75em; // 620px divided by the browser default font size which is 16
+$bp-tiny: 36.9375em; // 591px divided by the browser default font size which is 16
+$bp-nav: 32.4375em; // 519px divided by the browser default font size which is 16
+$bp-mob: 26.3125em; // 421px divided by the browser default font size which is 16
+$bp-smallest: 24.0625em; // 385px divided by the browser default font size which is 16

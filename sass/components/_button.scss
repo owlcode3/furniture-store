@@ -1,0 +1,18 @@
+.btn {
+  transition: all 0.2s;
+  &:link,
+  &:visited {
+    background-color: var(--primary-color-2);
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 1rem 4rem;
+    font-size: 1.3rem;
+    display: inline-block;
+  }
+
+  &:hover,
+  &:active {
+    transform: translateY(-0.5rem) translateY(0);
+    box-shadow: var(--shadow-dark);
+  }
+}

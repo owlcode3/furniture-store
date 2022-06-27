@@ -1,0 +1,28 @@
+* {
+  &,
+  &::after,
+  &::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  @include respond(large) {
+    font-size: 60.5%;
+  }
+
+  @include respond(medium) {
+    font-size: 56.5%;
+  }
+
+  @include respond(small) {
+    font-size: 56.4%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
