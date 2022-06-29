@@ -51,4 +51,16 @@
       @content;
     }
   }
+
+  @if $breakpoint == micro {
+    @media (max-width: $bp-micro) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == nano {
+    @media (max-width: $bp-nano) {
+      @content;
+    }
+  }
 }

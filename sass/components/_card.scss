@@ -11,6 +11,13 @@
 
   box-shadow: var(--shadow-dark);
   border-radius: 0.5rem;
+  @include respond(large) {
+    max-width: 30rem;
+    height: 29rem;
+    &:not(:last-child) {
+      margin-bottom: 8rem;
+    }
+  }
   &__icon {
     // width: 40%;
     height: 30%;
@@ -27,11 +34,11 @@
     text-transform: uppercase;
     margin-bottom: 0.8rem;
     @include respond(medium) {
-      font-size: 1.8rem;
+      font-size: 1.9rem;
     }
 
     @include respond(mob) {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
   }
 

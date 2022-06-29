@@ -5,7 +5,7 @@
   align-items: center;
   @include respond(nav) {
     justify-content: space-between;
-    height: 8vh;
+    height: 5.8vh;
     position: relative;
   }
 
@@ -114,6 +114,7 @@
 
       &::after {
         top: 0.7rem;
+        height: 0.4rem;
       }
     }
   }
@@ -133,12 +134,20 @@
       height: 48vh;
       //flex: 0 0 45%;
       position: absolute;
-      top: 4.8rem;
+      top: 4.5rem;
       // bottom: -19.7rem;
       //left: 24rem;
       z-index: 9999;
       text-align: center;
       transition: all 0.2s;
+    }
+
+    @include respond(nav) {
+      height: 56vh;
+    }
+
+    @include respond(smallest) {
+      height: 52vh;
     }
   }
 
@@ -160,6 +169,7 @@
     @include respond(nav) {
       transform: rotate(-135deg);
       top: 0;
+      height: 0.3rem;
     }
   }
 }

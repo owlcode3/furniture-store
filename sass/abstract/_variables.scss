@@ -25,12 +25,14 @@
 $color-grey-light-1: #ccf3ee;
 
 // breakpoint
-$bp-largest: 60.625em; // 970px divided by the browser default font size which is 16
-$bp-large: 58.125em; // 930px divided by the browser default font size which is 16
-$bp-medium: 49.625em; // 794px divided by the browser default font size which is 16
-$bp-am: 46.3125em; // 741px divided by the browser default font size which is 16
-$bp-small: 38.75em; // 620px divided by the browser default font size which is 16
-$bp-tiny: 36.9375em; // 591px divided by the browser default font size which is 16
-$bp-nav: 32.4375em; // 519px divided by the browser default font size which is 16
-$bp-mob: 26.3125em; // 421px divided by the browser default font size which is 16
-$bp-smallest: 24.0625em; // 385px divided by the browser default font size which is 16
+$bp-largest: 60em; // 970px divided by the browser default font size which is 16
+$bp-large: 58em; // 930px divided by the browser default font size which is 16
+$bp-medium: 49em; // 794px divided by the browser default font size which is 16
+$bp-am: 46em; // 741px divided by the browser default font size which is 16
+$bp-small: 38em; // 620px divided by the browser default font size which is 16
+$bp-tiny: 36em; // 591px divided by the browser default font size which is 16
+$bp-nav: 32em; // 519px divided by the browser default font size which is 16
+$bp-mob: 26em; // 421px divided by the browser default font size which is 16
+$bp-smallest: 24em; // 385px divided by the browser default font size which is 16
+$bp-micro: 22.5em; // 360px divided by the browser default font size which is 16
+$bp-nano: 21.25em; // 3400px divided by the browser default font size which is 16
