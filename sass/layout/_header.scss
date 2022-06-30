@@ -5,7 +5,7 @@
   align-items: center;
   @include respond(nav) {
     justify-content: space-between;
-    height: 5.8vh;
+    height: 8vh;
     position: relative;
   }
 
@@ -134,7 +134,7 @@
       height: 48vh;
       //flex: 0 0 45%;
       position: absolute;
-      top: 4.5rem;
+      top: 5.5rem;
       // bottom: -19.7rem;
       //left: 24rem;
       z-index: 9999;
@@ -146,8 +146,17 @@
       height: 56vh;
     }
 
+    @include respond(mob) {
+      top: 7rem;
+    }
+
     @include respond(smallest) {
       height: 52vh;
+      top: 5.5rem;
+    }
+
+    @include respond(micro) {
+      top: 5.4rem;
     }
   }
 

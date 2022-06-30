@@ -12,7 +12,7 @@
   box-shadow: var(--shadow-dark);
   border-radius: 0.5rem;
   @include respond(large) {
-    max-width: 30rem;
+    max-width: 33rem;
     height: 29rem;
     &:not(:last-child) {
       margin-bottom: 8rem;
@@ -53,5 +53,11 @@
   &:hover {
     transform: scale(1.1); //translateY(-2rem);
     box-shadow: var(--shadow-light);
+
+    @include respond(large) {
+      & {
+        transform: none;
+      }
+    }
   }
 }

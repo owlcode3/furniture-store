@@ -38,11 +38,16 @@
     height: 65vh;
   }
 
+  // @include respond(micro) {
+  //   height: 70vh;
+  //   margin-bottom: 5rem;
+  // }
+
   @include respond(nano) {
     height: 50vh;
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
     background-image: none;
-    background-position: top;
+    //background-position: top;
   }
 
   .container-h {
@@ -56,6 +61,10 @@
     @include respond(largest) {
       margin-top: 5rem;
       //background-color: red;
+    }
+
+    @include respond(nano) {
+      margin-bottom: -5rem;
     }
   }
 
@@ -115,6 +124,10 @@
 
       @include respond(micro) {
         font-size: 2.4rem;
+      }
+
+      @include respond(nano) {
+        font-size: 2rem;
       }
       .span {
         color: #cfb53b;
