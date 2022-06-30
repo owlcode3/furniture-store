@@ -212,8 +212,11 @@ u-margin-bottom {
   @media (max-width: 32em) {
     .header {
       justify-content: space-between;
-      height: 8vh;
+      height: 10vh;
       position: relative; } }
+  @media (max-width: 26em) {
+    .header {
+      height: 8vh; } }
   .header__logo {
     width: 3.2rem;
     height: 3.2rem;
@@ -243,7 +246,7 @@ u-margin-bottom {
     list-style: none; }
     @media (max-width: 32em) {
       .header__list {
-        margin-bottom: 2.4rem; } }
+        margin-bottom: 6rem; } }
   .header__link {
     text-transform: uppercase;
     text-decoration: none;
@@ -303,23 +306,16 @@ u-margin-bottom {
       background-color: black;
       background-color: gray;
       clip-path: polygon(100% 0, 100% 78%, 0 100%, 0 55%, 0 0);
-      width: 100%;
-      height: 48vh;
-      position: absolute;
-      top: 5.5rem;
-      z-index: 9999;
       text-align: center;
-      transition: all 0.2s; } }
-  @media (max-width: 32em) {
-    .header__input:checked ~ .header__nav {
-      height: 56vh; } }
-  @media (max-width: 26em) {
-    .header__input:checked ~ .header__nav {
+      transition: all 0.2s;
+      padding: 3rem 0;
+      order: 1;
+      width: 100%;
+      position: absolute;
       top: 7rem; } }
   @media (max-width: 24em) {
     .header__input:checked ~ .header__nav {
-      height: 52vh;
-      top: 5.5rem; } }
+      top: 5.6rem; } }
   @media (max-width: 22.5em) {
     .header__input:checked ~ .header__nav {
       top: 5.4rem; } }
@@ -363,7 +359,7 @@ u-margin-bottom {
       margin-bottom: 7rem; } }
   @media (max-width: 32em) {
     .hero-section {
-      height: 55vh; } }
+      height: 50vh; } }
   @media (max-width: 24em) {
     .hero-section {
       clip-path: none;

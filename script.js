@@ -25,3 +25,4 @@ brandSection.forEach(bs => {
   bs.style.opacity = '0';
 });
 
+

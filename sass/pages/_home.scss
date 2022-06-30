@@ -30,7 +30,7 @@
   }
 
   @include respond(nav) {
-    height: 55vh;
+    height: 50vh;
   }
 
   @include respond(smallest) {
