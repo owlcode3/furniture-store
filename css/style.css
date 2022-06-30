@@ -315,7 +315,7 @@ u-margin-bottom {
       top: 7rem; } }
   @media (max-width: 24em) {
     .header__input:checked ~ .header__nav {
-      top: 5.6rem; } }
+      top: 6rem; } }
   @media (max-width: 22.5em) {
     .header__input:checked ~ .header__nav {
       top: 5.4rem; } }
@@ -359,7 +359,7 @@ u-margin-bottom {
       margin-bottom: 7rem; } }
   @media (max-width: 32em) {
     .hero-section {
-      height: 50vh; } }
+      height: 55vh; } }
   @media (max-width: 24em) {
     .hero-section {
       clip-path: none;
