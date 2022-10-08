@@ -1,3 +1,22 @@
-u-margin-bottom {
+.u-margin-bottom {
   margin-bottom: 18rem !important;
+}
+
+.secondary-text {
+  color: black;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.tertiary-text {
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  font-weight: 600;
+  max-width: 24rem;
+  margin-bottom: 2.5rem;
+}
+
+.scroll-off {
+  overflow: hidden;
 }

@@ -4,11 +4,12 @@
   "description": "landing page for a furniture shop",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "sass sass/main.scss css/style.css -w",
+    "start": "live-server"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^7.0.1"
+    "sass": "^1.34.1"
   }
 }

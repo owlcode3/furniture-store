@@ -1,63 +1,52 @@
 .card {
-  max-width: 27rem;
+  width: 30%;
   height: 28rem;
-  display: flex;
+  @include flex(center, center, _);
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  //background-color: whitesmoke;
-  background-color: rgb(236, 236, 236);
+  background-color: var(--color-primary);
   transition: all 0.2s;
-
   box-shadow: var(--shadow-dark);
   border-radius: 0.5rem;
-  @include respond(large) {
-    max-width: 33rem;
-    height: 29rem;
-    &:not(:last-child) {
-      margin-bottom: 8rem;
-    }
+  @include respond(laptop) {
+    max-width: 30rem;
   }
+  @include respond(tablet) {
+    min-width: 36rem;
+  }
+  @include respond(tablet_2) {
+    min-width: 38rem;
+  }
+  @include respond(mobile) {
+    min-width: 100%;
+  }
+
   &__icon {
-    // width: 40%;
     height: 30%;
     display: block;
     margin-bottom: 1rem;
-    @include respond(medium) {
-      height: 28%;
-    }
   }
 
   &__header {
-    color: black;
+    color: var(--primary-color-1);
     font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 0.8rem;
-    @include respond(medium) {
-      font-size: 1.9rem;
-    }
-
-    @include respond(mob) {
-      font-size: 1.8rem;
-    }
   }
 
   &__paragraph {
-    color: black;
+    color: var(--primary-color-1);
     font-size: 1.3rem;
     font-weight: 400;
     padding: 0 3.6rem;
     text-align: center;
+    max-width: 28rem;
+    @include respond(laptop) {
+      max-width: 26rem;
+    }
   }
 
   &:hover {
-    transform: scale(1.1); //translateY(-2rem);
+    transform: scale(1);
     box-shadow: var(--shadow-light);
-
-    @include respond(large) {
-      & {
-        transform: none;
-      }
-    }
   }
 }

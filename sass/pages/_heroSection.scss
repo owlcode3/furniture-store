@@ -1,0 +1,110 @@
+.hero-section {
+  padding-bottom: 15rem;
+  @include flex(_, flex-end, _);
+  @include respond(laptop) {
+    padding-left: 4rem;
+  }
+  @include respond(tablet) {
+    padding-bottom: 10rem;
+  }
+  @include respond(tablet_2) {
+    padding-left: 0;
+    padding-bottom: 1rem;
+  }
+  @include respond(mobile) {
+    background-image: url(/assets/khloe-arledge-8Rz_RIyp5FM-unsplash.webp);
+    padding: 0 2rem;
+  }
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  justify-content: end;
+  max-width: 120rem;
+  @include respond(laptop) {
+    width: 100%;
+  }
+  @include respond(tablet_2) {
+    grid-template-columns: 100%;
+    text-align: center;
+    padding: 15rem 0;
+  }
+
+  &__texts {
+    @include flexCol(4rem);
+    @include respond(tablet_2) {
+      align-items: center;
+    }
+  }
+
+  &__heading-1 {
+    background-color: rgba($color-grey-light-1, 1);
+    color: var(--primary-color-1);
+    padding: 1rem 0 1rem 3rem;
+    width: 52rem;
+    border-radius: 3px;
+    line-height: 8rem;
+    @include respond(tablet) {
+      padding: 1rem 0 1rem 3rem;
+      line-height: 6rem;
+      width: 40rem;
+    }
+    @include respond(tablet_2) {
+      line-height: 5.5rem;
+      padding: 2rem 2rem 2rem 2rem;
+    }
+    @include respond(mobile) {
+      padding: 2rem 0;
+      width: 100%;
+    }
+    h3 {
+      font-size: 2.5rem;
+      @include respond(tablet) {
+        font-size: 2.2rem;
+      }
+    }
+    h1 {
+      font-size: 4rem;
+      font-weight: 600;
+      @include respond(tablet) {
+        font-size: 3rem;
+      }
+      span {
+        color: $color-primary-5;
+      }
+    }
+  }
+
+  &__heading-2 {
+    h2 {
+      color: var(--primary-color-1);
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: var(--primary-color-1);
+      font-size: 1.2rem;
+      font-weight: 600;
+      max-width: 23rem;
+      margin-bottom: 2.5rem;
+      @include respond(tablet_2) {
+        max-width: 26rem;
+      }
+    }
+  }
+
+  &__image-container {
+    @include flex(_, flex-end, _);
+    z-index: -1;
+    @include respond(tablet_2) {
+      display: none;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+}

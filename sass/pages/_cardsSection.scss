@@ -1,0 +1,14 @@
+.card-section {
+  padding-bottom: 12rem;
+  @include flex(center, space-evenly, _);
+  @include respond(tablet) {
+    flex-direction: column;
+    row-gap: 6rem;
+    padding-bottom: 10rem;
+  }
+
+  @include respond(mobile) {
+    padding: 0 3rem;
+    padding-bottom: 8rem;
+  }
+}

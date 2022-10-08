@@ -1,247 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Open+Sans:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
-  <title>AVN Furniture</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;
+      200;300;400;500;600&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <title>AVN Furniture</title>
+  </head>
 
-<body>
+  <body>
+    <header class="header">
+      <input title="" type="checkbox" class="header__checkbox" id="checkbox-toggle" />
+      <label class="header__hamburger" for="checkbox-toggle">
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+      </label>
 
-  <header class="header">
+      <img src="assets/logo-logo.png" alt="" class="header__logo">
 
-    <input type="checkbox" class="header__input" id="checkbox-toggle" title=".">
-    <label for="checkbox-toggle" class="header__label"><span class="header--1">&nbsp;</span></label>
-
-    <img src="assets/logo-logo.png" alt="" class="header__logo">
-    <ul class="header__nav">
-      <li class="header__list"><a href="#" class="header__link">home</a></li>
-      <li class="header__list"><a href="#" class="header__link">furniture</a></li>
-      <li class="header__list"><a href="#" class="header__link">pricing</a></li>
-      <li class="header__list"><a href="#" class="header__link">contact</a></li>
-    </ul>
-
-    <svg class="search-icon">
-      <use xlink:href="assets/sprite.svg#icon-search"></use>
-    </svg>
-  </header>
-  </div>
-  <main>
-    <section class="hero-section">
-      <div class="container-h">
-        <div class="text-primary">
-          <div class="heading-primary">
-            <h3 class="heading-primary--main">Contact Us For Your </h3>
-            <h1 class="heading-primary--sub">Custom Made <span class="span">Furniture</span></h1>
-          </div>
-
-          <div class="heading-secondary">
-            <h2 class="secondary-text">
-              Green Silk
-            </h2>
-            <p class="tertiary-text heading-secondary--text">
-              Green silk single grandpa chair, suitable for all homes, made from the finest mahogamy wood structure
-            </p>
-            <a href="#" class="btn btn--4--hs">Shop Now</a>
+      <div class="header__nav">
+        <div class="header__list"><a href="#" class="header__link">home</a></div>
+        <div class="header__list"><a href="#" class="header__link">furniture</a></div>
+        <div class="header__list"><a href="#" class="header__link">pricing</a></div>
+        <div class="header__list"><a href="#" class="header__link">contact</a></div>
+        <div class="header__input-container">
+          <input type="text" class="header__list header__list-input" placeholder="search....">
+          <div class="header__search-icon-container">
+            <svg class="header__search-icon">
+              <use xlink:href="assets/sprite.svg#icon-search"></use>
+            </svg>
           </div>
         </div>
       </div>
-      <img src="assets/hero-im.jpeg" alt="a green chair" class="img">
-    </section>
+    </header>
 
-    <section class="brand-section">
-      <div class="brand">
-        <img src="../assets/amazon-logo.png" alt="amazon logo" class="brand__logo">
-        <img src="../assets/konga-logo.png" alt="jumia logo" class="brand__logo">
-        <img src="../assets/bi-logo.png" alt="jumia logo" class="brand__logo brand__logo--bi">
-        <img src="../assets/gill-logo.png" alt="jumia logo" class="brand__logo">
-      </div>
-    </section>
+    <main>
+      <section class="hero-section">
+        <div class="hero">
+          <div class="hero__texts">
+            <div class="hero__heading-1">
+              <h3>Contact Us For Your</h3>
+              <h1>Custom Made <span>Furniture</span></h1>
+            </div>
 
-    <section class="deck-wall-section">
-      <div class="img-container">
-        <img src="assets/sofa15.jpg" alt="" class="wall-img">
-      </div>
-      <div class="text-container">
-        <h2 class="secondary-text">
-          Double Deck Wall Hang
+            <div class="hero__heading-2">
+              <h2>
+                Green Silk
+              </h2>
+              <p>
+                Green silk single grandpa chair, suitable for all homes, made from the
+                finest mahogany wood structure
+              </p>
+              <a href="#" class="btn btn--4--hs">Shop Now</a>
+            </div>
+          </div>
+
+          <div class="hero__image-container">
+            <img class="hero__image" src="assets/hero-img.webp" alt="a chair">
+          </div>
+        </div>
+      </section>
+
+      <section class="brand-section">
+        <div class="brand">
+          <img src="../assets/amazon-logo.png" alt="amazon logo" class="brand__logo">
+          <img src="../assets/konga-logo.png" alt="jumia logo" class="brand__logo">
+          <img src="../assets/bi-logo.png" alt="jumia logo" class="brand__logo brand__logo--bi">
+          <img src="../assets/gill-logo.png" alt="jumia logo" class="brand__logo">
+        </div>
+      </section>
+
+      <section class="deck-wall-section">
+        <div class="img-container">
+          <img src="assets/sofa15.jpg" alt="" class="wall-img">
+        </div>
+        <div class="product__texts  wall-texts">
+          <h2 class="secondary-text">
+            Double Deck Wall Hang
+          </h2>
+          <p class="tertiary-text">
+            Green silk single grandpa chair, suitable for all homes,
+            made from the finest mahogany wood structure
+          </p>
+          <a href="#" class="btn btn--4--hs">Shop Now</a>
+        </div>
+      </section>
+
+      <section class="mission-section">
+        <h2 class="mission-text">
+          We on the mission to give you the
+          <span class="mission-text--main">Best</span> <span class="mission-text--sub">wooden</span> support<span
+            class="mission-text--icon">&#10154;</span>
         </h2>
-        <p class="tertiary-text">
-          Green silk single grandpa chair, suitable for all homes, made from the finest mahogamy wood structure
-        </p>
-        <a href="#" class="btn btn--4--hs">Shop Now</a>
-      </div>
-    </section>
+      </section>
 
-    <section class="mission-section" id="menu">
-      <h2 class="mission-text">
-        We on the mission to give you the
-        <span class="mission-text--main">Best</span> <span class="mission-text--sub">wooden</span> support<span
-          class="mission-text--icon">&#10154;</span>
-      </h2>
-    </section>
+      <section class="card-section">
+        <div class="card">
+          <img src="../assets/best-quality.png" class="card__icon" alt="best quality">
+          <h3 class="card__header">
+            best quality
+          </h3>
+          <p class="card__paragraph">
+            We have the best proven quality for over ten years and a good track record
+          </p>
+        </div>
+        <div class="card">
 
-    <section class="card-section" id="menus">
-      <div class="card">
-        <img src="../assets/best-quality.png" class="card__icon" alt="best quality">
-        <h3 class="card__header">
-          best quality
-        </h3>
-        <p class="card__paragraph">
-          We have the best proven quality for over ten years and a good track record
-        </p>
-      </div>
-      <div class="card">
+          <img src="../assets/ship.png" class="card__icon" alt="best quality">
+          <h3 class="card__header">
+            free shipping
+          </h3>
+          <p class="card__paragraph">
+            We deliver to anywhere in the world, any size and and length swift delivery
+          </p>
+        </div>
 
-        <img src="../assets/ship.png" class="card__icon" alt="best quality">
-        <h3 class="card__header">
-          free shipping
-        </h3>
-        <p class="card__paragraph">
-          We deliver to anywhere in the world, any size and and length swift delivery
-        </p>
-      </div>
+        <div class="card">
+          <img src="../assets/warranty.png" class="card__icon" alt="best quality">
+          <h3 class="card__header">
+            warranty
+          </h3>
+          <p class="card__paragraph">
+            We give minimum warranty of 3 years and maximum of 10 years to all our products
+          </p>
+        </div>
+      </section>
 
-      <div class="card">
-        <img src="../assets/warranty.png" class="card__icon" alt="best quality">
-        <h3 class="card__header">
-          warranty
-        </h3>
-        <p class="card__paragraph">
-          We give minimum warranty of 3 years and maximum of 10 years to all our products
-        </p>
-      </div>
-    </section>
-
-    <section class="mission-section">
-      <h2 class="mission-text">
-        We provide the <span class="mission-text--main">Best</span> <span class="mission-text--sub">comfort</span>
-      </h2>
-    </section>
-
-    <section class="longetivity-section">
-      <div class="experience">
-        <h3 class="experience--text">years of experience</h3>
-        <h2 class="experience--number">20+</h2>
-      </div>
-      <div class="experience">
-        <h3 class="experience--text">products sold</h3>
-        <h2 class="experience--number">5000+</h2>
-      </div>
-      <div class="experience">
-        <h3 class="experience--text">awards won</h3>
-        <h2 class="experience--number">80+</h2>
-      </div>
-    </section>
-
-    <section class="sofa-section">
-      <div class="composition">
-        <img src="../assets/sofa-2-3.jpg" alt="a sofa" class="composition--photo">
-      </div>
-    </section>
-
-    <section class="product-section product-section--type">
-      <div class="photo-container">
-        <img src="assets/sofa-3-2.jpg" alt="" class="photo">
-      </div>
-      <div class="text-container">
-        <h2 class="secondary-text">
-          VAHANESE SEATER
+      <section class="mission-section">
+        <h2 class="mission-text">
+          We provide the <span class="mission-text--main">Best</span> <span class="mission-text--sub">comfort</span>
         </h2>
-        <p class="tertiary-text">
-          Green silk single grandpa chair, suitable for all homes, made from the finest mahogamy wood structure
-        </p>
-        <a href="#" class="btn btn--4--hs">Shop Now</a>
-      </div>
-      <span class="no-1">01</span>
-    </section>
+      </section>
 
-    <section class="product-section product-section--type">
-      <div class="photo-container photo-container--02">
-        <img src="assets/sofa-12-12.jpg" alt="" class="photo">
-      </div>
-      <div class="text-container">
-        <h2 class="secondary-text">
-          VAHANESE SEATER
-        </h2>
-        <p class="tertiary-text">
-          Green silk single grandpa chair, suitable for all homes, made from the finest mahogamy wood structure
-        </p>
-        <a href="#" class="btn btn--4--hs">Shop Now</a>
-      </div>
-      <span class="no-1 no-1--02">02</span>
-    </section>
+      <section class="longevity-section">
+        <div class="experience">
+          <h3 class="experience--text">years of experience</h3>
+          <h2 class="experience--number">20+</h2>
+        </div>
+        <div class="experience">
+          <h3 class="experience--text">products sold</h3>
+          <h2 class="experience--number">5000+</h2>
+        </div>
+        <div class="experience">
+          <h3 class="experience--text">awards won</h3>
+          <h2 class="experience--number">80+</h2>
+        </div>
+      </section>
 
-    <section class="product-section product-section--type">
-      <div class="photo-container">
-        <img src="assets/sofa-6-6.jpg" alt="" class="photo">
-      </div>
-      <div class="text-container">
-        <h2 class="secondary-text">
-          VAHANESE SEATER
-        </h2>
-        <p class="tertiary-text">
-          Green silk single grandpa chair, suitable for all homes, made from the finest mahogamy wood structure
-        </p>
-        <a href="#" class="btn btn--4--hs">Shop Now</a>
-      </div>
-      <span class="no-1">03</span>
-    </section>
-  </main>
+      <section class="sofa-section">
+        <div class="composition">
+          <img src="../assets/sofa-2-3.jpg" alt="a sofa" class="composition--photo">
+        </div>
+      </section>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__container">
-        <h2 class="footer__text">Company</h2>
-        <h3 class="footer__text footer__text--small">Home</h3>
-        <h3 class="footer__text footer__text--small">About Us</h3>
-        <h3 class="footer__text footer__text--small">Contact</h3>
-      </div>
+      <section class="products-section">
+        <div class="products">
+          <div class="product">
+            <div class="product__image">
+              <img src="assets/sofa-3-2.jpg" alt="product image">
+            </div>
+            <div class="product__texts">
+              <h2 class="secondary-text">
+                VAHANESE SEATER
+              </h2>
+              <p class="tertiary-text">
+                Green silk single grandpa chair, suitable for all homes,
+                made from the finest mahogany wood structure
+              </p>
+              <a href="#" class="btn btn--4--hs">Shop Now</a>
+            </div>
+            <span class="no-1">01</span>
+          </div>
 
-      <div class="footer__container">
-        <h2 class="footer__text">Policy</h2>
-        <h3 class="footer__text footer__text--small">Terms of Services</h3>
-        <h3 class="footer__text footer__text--small">Conditions</h3>
-      </div>
+          <div class="product">
+            <div class="product__image product__image--02">
+              <img src="assets/sofa-12-12.jpg" alt="product image">
+            </div>
+            <div class="product__texts">
+              <h2 class="secondary-text">
+                VAHANESE SEATER
+              </h2>
+              <p class="tertiary-text">
+                Green silk single grandpa chair, suitable for all homes,
+                made from the finest mahogany wood structure
+              </p>
+              <a href="#" class="btn btn--4--hs">Shop Now</a>
+            </div>
+            <span class="no-1 no-1--02">02</span>
+          </div>
 
-      <div class="footer__container">
-        <h2 class="footer__text">Location</h2>
-        <h3 class="footer__text footer__text--small">UK</h3>
-        <h3 class="footer__text footer__text--small">Nigeria</h3>
-        <h3 class="footer__text footer__text--small">Ghana</h3>
-        <h3 class="footer__text footer__text--small">United States</h3>
-      </div>
+          <div class="product">
+            <div class="product__image">
+              <img src="assets/sofa-6-6.jpg" alt="product image">
+            </div>
+            <div class="product__texts">
+              <h2 class="secondary-text">
+                VAHANESE SEATER
+              </h2>
+              <p class="tertiary-text">
+                Green silk single grandpa chair, suitable for all homes,
+                made from the finest mahogany wood structure
+              </p>
+              <a href="#" class="btn btn--4--hs">Shop Now</a>
+            </div>
+            <span class="no-1">03</span>
+          </div>
+        </div>
+      </section>
+    </main>
 
-      <div class="footer__container">
-        <h2 class="footer__text">Contacts</h2>
-        <h3 class="footer__text footer__text--small">+007-224-44-24567</h3>
-        <h3 class="footer__text footer__text--small">+134-0789-567-890</h3>
-        <h3 class="footer__text footer__text--small">+133-546-778-55</h3>
-        <h3 class="footer__text footer__text--small">+555-7874574-52-50</h3>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <h2 class="footer__text">Company</h2>
+          <h3 class="footer__text footer__text--small">Home</h3>
+          <h3 class="footer__text footer__text--small">About Us</h3>
+          <h3 class="footer__text footer__text--small">Contact</h3>
+        </div>
+
+        <div class="footer__container">
+          <h2 class="footer__text">Policy</h2>
+          <h3 class="footer__text footer__text--small">Terms of Services</h3>
+          <h3 class="footer__text footer__text--small">Conditions</h3>
+        </div>
+
+        <div class="footer__container">
+          <h2 class="footer__text">Location</h2>
+          <h3 class="footer__text footer__text--small">UK</h3>
+          <h3 class="footer__text footer__text--small">Nigeria</h3>
+          <h3 class="footer__text footer__text--small">Ghana</h3>
+          <h3 class="footer__text footer__text--small">United States</h3>
+        </div>
+
+        <div class="footer__container">
+          <h2 class="footer__text">Contacts</h2>
+          <h3 class="footer__text footer__text--small">+007-224-44-24567</h3>
+          <h3 class="footer__text footer__text--small">+134-0789-567-890</h3>
+          <h3 class="footer__text footer__text--small">+133-546-778-55</h3>
+          <h3 class="footer__text footer__text--small">+555-7874574-52-50</h3>
+        </div>
       </div>
-    </div>
-    <div class="footer__icons">
-      <a href="#" class="footer__link"><svg class="footer__icon">
-          <use xlink:href="assets/sprite.svg#icon-facebook2"></use>
-        </svg></a>
-      <a href="" class="footer__link"><svg class="footer__icon">
-          <use xlink:href="assets/sprite.svg#icon-linkedin"></use>
-        </svg></a>
-      <a href="" class="footer__link"><svg class="footer__icon">
-          <use xlink:href="assets/sprite.svg#icon-twitter"></use>
-        </svg></a>
-      <a href="" class="footer__link"><svg class="footer__icon">
-          <use xlink:href="assets/sprite.svg#icon-instagram"></use>
-        </svg></a>
-    </div>
-  </footer>
-</body>
-<script src="script.js"></script>
+      <div class="footer__icons">
+        <a href="/" class="footer__link"><svg class="footer__icon">
+            <use xlink:href="assets/sprite.svg#icon-facebook2"></use>
+          </svg></a>
+        <a href="/" class="footer__link"><svg class="footer__icon">
+            <use xlink:href="assets/sprite.svg#icon-linkedin"></use>
+          </svg></a>
+        <a href="/" class="footer__link"><svg class="footer__icon">
+            <use xlink:href="assets/sprite.svg#icon-twitter"></use>
+          </svg></a>
+        <a href="/" class="footer__link"><svg class="footer__icon">
+            <use xlink:href="assets/sprite.svg#icon-instagram"></use>
+          </svg></a>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
 
 </html>

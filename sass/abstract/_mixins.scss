@@ -1,66 +1,43 @@
+// Media Query Manager
 @mixin respond($breakpoint) {
-  @if $breakpoint == largest {
-    @media (max-width: $bp-largest) {
-      @content;
-    }
-  }
-  @if $breakpoint == large {
-    @media (max-width: $bp-large) {
+  @if $breakpoint == laptop {
+    @media (max-width: 78em) {
+      // 1260px / 16px = 78em
       @content;
     }
   }
 
-  @if $breakpoint == medium {
-    @media (max-width: $bp-medium) {
+  @if $breakpoint == tablet {
+    @media (max-width: 56em) {
+      // 900px / 16px = 56em
       @content;
     }
   }
 
-  @if $breakpoint == am {
-    @media (max-width: $bp-am) {
+  @if $breakpoint == tablet_2 {
+    @media (max-width: 48em) {
+      // 768px / 16px = 48em
       @content;
     }
   }
 
-  @if $breakpoint == small {
-    @media (max-width: $bp-small) {
+  @if $breakpoint == mobile {
+    @media (max-width: 27em) {
+      // 425px / 16px = 27em
       @content;
     }
   }
+}
 
-  @if $breakpoint == tiny {
-    @media (max-width: $bp-tiny) {
-      @content;
-    }
-  }
+@mixin flex($ai, $jc, $gap) {
+  display: flex;
+  align-items: $ai;
+  justify-content: $jc;
+  gap: $gap;
+}
 
-  @if $breakpoint == nav {
-    @media (max-width: $bp-nav) {
-      @content;
-    }
-  }
-
-  @if $breakpoint == mob {
-    @media (max-width: $bp-mob) {
-      @content;
-    }
-  }
-
-  @if $breakpoint == smallest {
-    @media (max-width: $bp-smallest) {
-      @content;
-    }
-  }
-
-  @if $breakpoint == micro {
-    @media (max-width: $bp-micro) {
-      @content;
-    }
-  }
-
-  @if $breakpoint == nano {
-    @media (max-width: $bp-nano) {
-      @content;
-    }
-  }
+@mixin flexCol($gap) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
 }

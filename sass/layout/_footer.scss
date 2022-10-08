@@ -1,44 +1,30 @@
 .footer {
   background-color: var(--primary-color-2);
-  display: flex;
+  @include flex(center, space-between, _);
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: auto;
-  @include respond(smallest) {
-    height: auto;
-  }
 
   .container {
-    display: flex;
-    justify-content: space-around;
+    @include flex(_, space-around, _);
     width: 100%;
-    margin-bottom: 5rem;
-
-    @include respond(smallest) {
-      flex-direction: column;
-      //margin-right: -2.5rem;
+    padding: 6rem 0;
+    @include respond(mobile) {
+      padding-top: 4rem;
+      display: grid;
+      grid-template-columns: max-content max-content;
+      justify-content: space-evenly;
+      align-items: start;
+      row-gap: 4rem;
+      text-align: center;
     }
   }
 
   &__container {
-    padding-top: 6rem;
-    @include respond(smallest) {
-      padding-top: 3rem;
-    }
   }
 
   &__text {
     font-size: 1.5rem;
     color: var(--color-primary);
     margin-bottom: 1rem;
-    @include respond(tiny) {
-      font-size: 1.2rem;
-    }
-
-    @include respond(smallest) {
-      font-size: 1.3rem;
-    }
 
     &--small {
       font-size: 1.3rem;
@@ -46,33 +32,27 @@
       @include respond(tiny) {
         font-size: 1.2rem;
       }
-
-      @include respond(smallest) {
-        font-size: 1.4rem;
-      }
     }
   }
 
   &__icons {
     width: 40%;
-    display: flex;
-    justify-content: space-evenly;
-
-    @include respond(smallest) {
-      margin-top: 2rem;
+    @include flex(_, space-evenly, _);
+    padding-bottom: 1rem;
+    @include respond(mobile) {
+      column-gap: 3rem;
     }
   }
+
   &__icon {
     width: 2rem;
     height: 2rem;
     fill: var(--color-primary);
-    @include respond(tiny) {
-      width: 1.7rem;
-      height: 1.7rem;
-    }
   }
 
-  &__link {
+  &__link,
+  &__link:link,
+  &__link:visited {
     text-decoration: none;
   }
 }

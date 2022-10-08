@@ -1,0 +1,28 @@
+.brand-section {
+  padding-bottom: 15rem;
+  @include respond(tablet) {
+    padding-bottom: 8rem;
+  }
+  @include respond(mobile) {
+    padding: 6rem 0;
+  }
+
+  .brand {
+    @include flex(center, space-evenly, _);
+    @include respond(tablet) {
+      justify-content: space-around;
+    }
+    &__logo {
+      width: 10%;
+      @include respond(tablet) {
+        width: 12%;
+      }
+      @include respond(tablet_2) {
+        width: 16%;
+      }
+      @include respond(mobile) {
+        width: 20%;
+      }
+    }
+  }
+}

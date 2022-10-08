@@ -1,29 +1,15 @@
 .header {
   background-color: var(--primary-color-2);
-  height: 10vh;
-  display: flex;
-  align-items: center;
-
-  // @include respond(small) {
-  //   // height: 10vh;
-  //   padding: 0.5rem 0;
-  // }
-
-  @include respond(nav) {
-    justify-content: space-between;
-    height: 10vh;
+  @include flex(center, space-between, _);
+  padding: 2rem 2rem;
+  @include respond(tablet) {
     position: relative;
   }
 
-  @include respond(mob) {
-    height: 8vh;
-  }
-
   &__logo {
-    width: 3.2rem;
+    width: 4rem;
     height: 3.2rem;
-    margin-left: 2.1rem;
-    @include respond(nav) {
+    @include respond(tablet) {
       order: -1;
     }
   }
@@ -31,160 +17,99 @@
   &__nav {
     font-size: 1.5rem;
     font-weight: 400;
-    flex: 0 0 89%;
-    display: flex;
-    justify-content: space-evenly;
-    @include respond(medium) {
-      font-size: 1.3rem;
-      flex: 0 0 86%;
-    }
-
-    @include respond(tiny) {
-      font-size: 1.2rem;
-      flex: 0 0 84%;
-    }
-
-    @include respond(nav) {
-      display: none;
-      order: 0;
+    width: 75%;
+    @include flex(center, space-between, _);
+    @include respond(tablet) {
+      height: calc(100vh - 4rem);
+      width: 100%;
+      font-weight: 600;
+      justify-content: flex-start;
+      flex-direction: column;
+      row-gap: 5rem;
+      padding-top: 12rem;
+      position: absolute;
+      right: -100rem;
+      top: 7.2rem;
+      background-color: rgb(0, 0, 0);
+      transition: all 0.5s;
+      z-index: 999;
     }
   }
 
   &__list {
-    list-style: none;
-    @include respond(nav) {
-      margin-bottom: 6rem;
+    &-input {
+      width: 18rem;
+      height: 2.9rem;
+      border: none;
+      outline: none;
+      border-radius: 0.4rem;
+      padding-left: 1rem;
     }
   }
-  &__link {
+  &__link,
+  &__link:link,
+  &__link:visited {
     text-transform: uppercase;
     text-decoration: none;
     color: var(--color-primary);
-    @include respond(nav) {
-      color: black;
-      font-weight: 600;
-      &:hover {
-        transform: translateY(-2rem);
-      }
-    }
   }
 
-  .search-icon {
-    fill: var(--color-primary);
-    width: 1.9rem;
-    height: 2rem;
-    @include respond(small) {
-      height: 1.8rem;
-    }
-
-    @include respond(tiny) {
-      height: 1.5rem;
-    }
-
-    @include respond(nav) {
+  &__input-container {
+    position: relative;
+    height: 2.9rem;
+    text-align: center;
+    overflow: hidden;
+    @include respond(tablet) {
       display: none;
     }
   }
 
-  &__label {
+  &__search-icon-container {
+    background-color: #fff;
+    border-radius: 0.4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2.9rem;
+    width: 4rem;
+    @include flex(center, center, _);
+    overflow: hidden;
+  }
+
+  &__search-icon {
+    fill: var(--color-primary);
+    fill: black;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  &__hamburger {
+    position: relative;
     display: none;
-    @include respond(nav) {
-      display: flex;
-      margin-top: 0.7rem;
-      background-color: black;
-      margin-right: 2rem;
-      order: 1;
+    @include respond(tablet) {
+      @include flexCol(0.4rem);
+      align-items: center;
     }
-  }
-
-  &--1 {
-    @include respond(nav) {
-      position: relative;
-      &,
-      &::before,
-      &::after {
-        width: 3.1rem;
-        height: 0.3rem;
-        background-color: #fff;
-        display: inline-block;
-        //border-radius: 2px;
-      }
-
-      &::before,
-      &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-      }
-
-      &::before {
-        top: -0.7rem;
-        height: 0.4rem;
-      }
-
-      &::after {
-        top: 0.7rem;
-        height: 0.4rem;
-      }
-    }
-  }
-
-  &__input {
-    display: none;
-  }
-
-  &__input:checked ~ &__nav {
-    @include respond(nav) {
-      display: flex;
-      flex-direction: column;
-      background-color: black;
-      background-color: rgba(grey, 1);
-      clip-path: polygon(100% 0, 100% 78%, 0 100%, 0 55%, 0 0);
-      text-align: center;
+    span {
+      width: 3rem;
+      height: 0.2rem;
+      background-color: #fff;
       transition: all 0.2s;
-      padding: 3rem 0;
-      order: 1;
-      width: 100%;
-      position: absolute;
-      top: 7rem;
     }
-
-    @include respond(nav) {
-      //height: 40vh;
-    }
-
-    @include respond(mob) {
-      // top: 7rem;
-    }
-
-    @include respond(smallest) {
-      top: 6rem;
-    }
-
-    @include respond(micro) {
-      top: 5.4rem;
+    span:nth-child(2) {
+      width: 1.8rem;
+      align-self: flex-end;
     }
   }
 
-  &__input:checked + &__label &--1 {
-    @include respond(nav) {
-      background-color: var(--primary-color-2);
-    }
-  }
-
-  &__input:checked + &__label &--1::before {
-    @include respond(nav) {
-      transform: rotate(135deg);
-      height: 0.3rem;
-      top: 0;
-    }
-  }
-
-  &__input:checked + &__label &--1::after {
-    @include respond(nav) {
-      transform: rotate(-135deg);
-      top: 0;
-      height: 0.3rem;
-    }
+  &__checkbox {
+    position: absolute;
+    width: 4rem;
+    top: 1.6rem;
+    right: 1.5rem;
+    z-index: 2;
+    cursor: pointer;
+    height: 2.6rem;
+    opacity: 0;
   }
 }
