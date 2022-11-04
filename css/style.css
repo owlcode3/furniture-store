@@ -257,7 +257,7 @@ body {
     flex-direction: column;
     row-gap: 5rem;
     padding-top: 12rem;
-    position: absolute;
+    position: fixed;
     right: -100rem;
     top: 7.2rem;
     background-color: rgb(0, 0, 0);
